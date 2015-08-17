@@ -9,7 +9,7 @@ from theano.tensor.shared_randomstreams import RandomStreams
 import matplotlib.pyplot as plt
 
 
-def test_DimentionalReduction(dataset='mnist.pkl.gz', pretraining_epochs=15, pretrain_lr=0.001, batch_size=100):
+def test_DimentionalReduction(dataset='mnist.pkl.gz', pretraining_epochs=50, pretrain_lr=0.01, batch_size=5):
     datasets = load_data(dataset)
     train_set_x, train_set_y = datasets[0]
     valid_set_x, valid_set_y = datasets[1]
